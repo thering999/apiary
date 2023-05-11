@@ -1,66 +1,69 @@
-# privateGPT
-Ask questions to your documents without an internet connection, using the power of LLMs. 100% private, no data leaves your execution environment at any point. You can ingest documents and ask questions without an internet connection!
+Apiary Editor
+The Apiary Editor is the foundation of your API design. Apiary Editor supports API Blueprint and Swagger API Description languages.
 
-Built with [LangChain](https://github.com/hwchase17/langchain) and [GPT4All](https://github.com/nomic-ai/gpt4all)
+Apiary Editor
 
-<img width="902" alt="demo" src="https://user-images.githubusercontent.com/721666/236942256-985801c9-25b9-48ef-80be-3acbb4575164.png">
+Overview
+Instant validation and live preview enable you to describe, test, share, and collaborate on an API in minutes.
 
-# Environment Setup
+Using the Editor
+The Apiary Editor shows a preview of your documentation while providing instant feedback to ensure correct syntax in your API document.
 
-In order to set your environment up to run the code here, first install all requirements:
+Your API document will be parsed with warnings and errors as you type. These errors will be displayed both in the editor header and on the lines where the warnings and errors exist.
 
-```shell
-pip install -r requirements.txt
-```
+Preview your documentation in the editor: see code samples for interacting with your API, try out the mock server, or make calls to your production server through the console. The Apiary Editor enables you to try out your API design as you write it.
 
-Then, download the 2 models and place them in a folder called `./models`:
-- LLM: default to [ggml-gpt4all-j-v1.3-groovy.bin](https://gpt4all.io/models/ggml-gpt4all-j-v1.3-groovy.bin). If you prefer a different GPT4All-J compatible model, just download it and reference it in `privateGPT.py`.
-- Embedding: default to [ggml-model-q4_0.bin](https://huggingface.co/Pi3141/alpaca-native-7B-ggml/resolve/397e872bf4c83f4c642317a5bf65ce84a105786e/ggml-model-q4_0.bin). If you prefer a different compatible Embeddings model, just download it and reference it in `privateGPT.py` and `ingest.py`.
+Apiary Editor console
 
-## Test dataset
-This repo uses a [state of the union transcript](https://github.com/imartinez/privateGPT/blob/main/source_documents/state_of_the_union.txt) as an example.
+Editor Header
+The Editor Header allows for customizing the editor, getting feedback about warnings or errors that may be in your API document, saving and publishing your documentation, and even pushing your document to GitHub.
 
-## Instructions for ingesting your own dataset
+Feedback and Validations
+The Apiary Editor gives you instant feedback on any warnings or errors in your document as you type. The feedback will include line numbers and explanations for the warnings and errors, which will take you to the corresponding line in the editor when clicked. You can also specify custom checks and warnings with the API Style Guide.
 
-Get your .txt file ready.
+Apiary Editor showing semantic issue
 
-Run the following command to ingest the data.
+Saving, Publishing, and Pushing to GitHub.
+The header provides controls for saving and publishing your API document.
 
-```shell
-python ingest.py <path_to_your_txt_file>
-```
+Note
+Changes in the editor are not saved automatically.
 
-It will create a `db` folder containing the local vectorstore. Will take time, depending on the size of your document.
-You can ingest as many documents as you want by running `ingest`, and all will be accumulated in the local embeddings database. 
-If you want to start from scratch, delete the `db` folder.
+If you have synced your API with GitHub, you can commit and push to GitHub directly from the editor. The sync works both ways: changes to your document on GitHub will be pulled down to Apiary.
 
-Note: during the ingest process no data leaves your local environment. You could ingest without an internet connection.
+Documentation Preview
+The documentation preview shows what your API document will look like when rendered as documentation. It also lets you to try out your API as you build. The documentation preview is dynamically updated as you type in the editor.
 
-## Ask questions to your documents, locally!
-In order to ask a question, run a command like:
+Note
+The mock server will only work with your published changes. This means you will need to save and publish your API to use the changes you’ve made.
 
-```shell
-python privateGPT.py
-```
+Swagger in Apiary Editor
+Default format for Swagger in Apiary is YAML. When you paste Swagger in JSON to editor, it will be validated and transformed into Swagger YAML.
 
-And wait for the script to require your input. 
+Swagger in Apiary Editor
 
-```shell
-> Enter a query:
-```
+Read Only Projects and Branches
+In some cases, you might want to prevent edits through Apiary Editor and allow modifications only through Apiary CLI or GitHub Sync/GitHub Integration.
 
-Hit enter. You'll need to wait 20-30 seconds (depending on your machine) while the LLM model consumes the prompt and prepares the answer. Once done, it will print the answer and the 4 sources it used as context from your documents; you can then ask another question without re-running the script, just wait for the prompt again. 
+Turning feature on
+For both project and branches, this can be done in API Project’s settings.
 
-Note: you could turn off your internet connection, and the script inference would still work. No data gets out of your local environment.
+API Project Settings
 
-Type `exit` to finish the script.
+If you are using GitHub Integration, you can only prevent edits to selected branches. Currently, the edited branch is displayed in the heading of the Settings page.
 
-# How does it work?
-Selecting the right local models and the power of `LangChain` you can run the entire pipeline locally, without any data leaving your environment, and with reasonable performance.
+API Project Settings GitHub Integration
 
-- `ingest.py` uses `LangChain` tools to parse the document and create embeddings locally using `LlamaCppEmbeddings`. It then stores the result in a local vector database using `Chroma` vector store. 
-- `privateGPT.py` uses a local LLM based on `GPT4All-J` to understand questions and create answers. The context for the answers is extracted from the local vector store using a similarity search to locate the right piece of context from the docs.
-- `GPT4All-J` wrapper was introduced in LangChain 0.0.162.
+How do I know if project is read-only?
+When project or branch is read-only, a message (instead of buttons) will be displayed in the top right corner.
 
-# Disclaimer
-This is a test project to validate the feasibility of a fully private solution for question answering using LLMs and Vector embeddings. It is not production ready, and it is not meant to be used in production. The models selection is not optimized for performance, but for privacy; but it is possible to use different models and vectorstores to improve performance.
+Read only Indicator
+
+Also, when you open list of branches, every entry will tell you if it is read-only or not.
+
+Read only Branches
+
+Team APIs only & PRO plan only
+This functionality is available only for team API Projects.
+
+Only Apiary PRO plan subscribers can use this feature. If you are interested please contacts us.
