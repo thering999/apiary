@@ -1,0 +1,890 @@
+FORMAT: 1A
+HOST: https://polls.apiblueprint.org/
+
+# ssjmuk
+
+Polls is a simple API allowing consumers to view polls and vote in them.
+
+## Questions Collection [/questions]
+
+### List All Questions [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "question": "Favourite programming language?",
+                "published_at": "2015-08-05T08:40:51.620Z",
+                "choices": [
+                    {
+                        "choice": "Swift",
+                        "votes": 2048
+                    }, {
+                        "choice": "Python",
+                        "votes": 1024
+                    }, {
+                        "choice": "Objective-C",
+                        "votes": 512
+                    }, {
+                        "choice": "Ruby",
+                        "votes": 256
+                    }
+                ]
+            }
+        ]
+
+
+## Animal Collection [/animal]
+
+### List All Animal [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "animal": "Favourite Animal ?",
+                "published_at": "2015-08-05T08:40:51.620Z",
+                "choices": [
+                    {
+                        "choice": "Dog",
+                        "votes": 2048
+                    }, {
+                        "choice": "Cat",
+                        "votes": 1024
+                    }, {
+                        "choice": "Pig",
+                        "votes": 512
+                    }, {
+                        "choice": "Cows",
+                        "votes": 256
+                    }
+                ]
+            }
+        ]
+
+
+
+## Hospcode Collection [/hospcode]
+
+### List All Hospcode [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "Author": "Sakarin Habusaya,Ph.D.",
+                "published_at": "2023-01-17T16:20:51.620Z",
+                "mukdahan": [
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05740",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านกุดโง้ง "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05741",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโคก "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05742",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองแวง "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05743",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโคกสูง "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05744",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านคำฮี "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05745",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโนนตูม "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05746",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองไผ่ "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05747",
+                        "hosname": "สถานีอนามัยเฉลิมพระเกียรติ 60 พรรษา นวมินทราชินี  "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05748",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านนาโด่"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05749",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านนาสีนวน "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05750",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านท่าไค้-นาแล "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05751",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านคำป่าหลาย"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05752",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านสามขา "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05753",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านแก้ง "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05754",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านเหมืองบ่า " 
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05755",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโนนสะอาด  "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05756",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านดงเย็น ตำบลดงเย็น"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05757",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านป่งโพง "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05758",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านดงมอน "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "05759"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "10712",
+                        "hosname": "โรงพยาบาลมุกดาหาร"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "14879",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโคกป่งเปือยนาโสก"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "เมืองมุกดาหาร",
+                        "hmain": "10712",
+                        "hmainname": "โรงพยาบาลมุกดาหาร",
+                        "hoscode": "14893",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโพนทราย  โพนทราย"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "05760",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านภูแผงม้า ตำบลนิคมคำสร้อย"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "05761",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านนากอก "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "05762",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองแวง "
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "05763",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านเหล่าหลวง ตำบลหนองแวง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "05764",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านเหล่ากลาง ตำบลกกแดง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "05765",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านนาอุดม ตำบลนาอุดม"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "05766",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านทรายไหลแล้ง ตำบลนาอุดม"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "05767",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองหลี่ ตำบลโชคชัย"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "05768",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านสุริโย ตำบลร่มเกล้า"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "11113",
+                        "hosname": "โรงพยาบาลนิคมคำสร้อย"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "นิคมคำสร้อย",
+                        "hmain": "11113",
+                        "hmainname": "โรงพยาบาลนิคมคำสร้อย",
+                        "hoscode": "11759",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโนนสวรรค์  ตำบลนากอก"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05769",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองหล่ม ตำบลโพธิ์ไทร"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05770",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโพธิ์ไทร ตำบลโพธิ์ไทร"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05771",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านป่าชาด ตำบลป่าไร่"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05772",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองเม็ก  ตำบลป่าไร่"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05774",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านนาทาม ตำบลป่าไร่"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05775",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านเหล่าหมี ตำบลเหล่าหมี"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05776",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านนาซิง  ตำบลเหล่าหมี"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05777",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านนายาง ตำบลบ้านบาก"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05778",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านนาสะเม็ง ตำบลนาสะเม็ง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05779",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองกระยัง ตำบลนาสะเม็ง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "05780",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านแก้ง ตำบลบ้านแก้ง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "10247",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านบาก  ตำบลบ้านบาก"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "10248",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านภูล้อม  บ้านบาก"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดอนตาล",
+                        "hmain": "11114",
+                        "hmainname": "โรงพยาบาลดอนตาล",
+                        "hoscode": "11114",
+                        "hosname": "โรงพยาบาลดอนตาล"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดงหลวง",
+                        "hmain": "11115",
+                        "hmainname": "โรงพยาบาลดงหลวง",
+                        "hoscode": "05781",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านเหล่า ตำบลหนองบัว"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดงหลวง",
+                        "hmain": "11115",
+                        "hmainname": "โรงพยาบาลดงหลวง",
+                        "hoscode": "05782",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านกกตูม ตำบลกกตูม"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดงหลวง",
+                        "hmain": "11115",
+                        "hmainname": "โรงพยาบาลดงหลวง",
+                        "hoscode": "05783",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านสานแว้  ตำบลกกตูม"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดงหลวง",
+                        "hmain": "11115",
+                        "hmainname": "โรงพยาบาลดงหลวง",
+                        "hoscode": "05784",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านขัวสูง ตำบลกกตูม"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดงหลวง",
+                        "hmain": "11115",
+                        "hmainname": "โรงพยาบาลดงหลวง",
+                        "hoscode": "05785",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านแก่งนาง ตำบลกกตูม"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดงหลวง",
+                        "hmain": "11115",
+                        "hmainname": "โรงพยาบาลดงหลวง",
+                        "hoscode": "05786",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองแคน ตำบลหนองแคน"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดงหลวง",
+                        "hmain": "11115",
+                        "hmainname": "โรงพยาบาลดงหลวง",
+                        "hoscode": "05787",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านชะโนดน้อย ตำบลชะโนดน้อย"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดงหลวง",
+                        "hmain": "11115",
+                        "hmainname": "โรงพยาบาลดงหลวง",
+                        "hoscode": "05788",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านย้อมพัฒนา ตำบลชะโนดน้อย"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดงหลวง",
+                        "hmain": "11115",
+                        "hmainname": "โรงพยาบาลดงหลวง",
+                        "hoscode": "05789",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านพังแดง ตำบลพังแดง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "ดงหลวง",
+                        "hmain": "11115",
+                        "hmainname": "โรงพยาบาลดงหลวง",
+                        "hoscode": "11115",
+                        "hosname": "โรงพยาบาลดงหลวง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "05790",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านคำชะอี ตำบลคำชะอี"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "05791",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโนนสังข์ศรี  บ้านซ่ง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "05792",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองเอี่ยน ตำบลหนองเอี่ยน"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "05793",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านค้อ ตำบลบ้านค้อ"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "05794",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านเหล่า ตำบลบ้านเหล่า"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "05795",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองหญ้าปล้อง ตำบลบ้านเหล่า"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "05796",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโพนงาม ตำบลโพนงาม"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "05797",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลโนนป่าแดง  ตำบลโพนงาม"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "05798",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านเหล่าสร้างถ่อ ตำบลเหล่าสร้างถ่อ"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "05799",
+                        "hosname":"โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านคำบก ตำบลคำบก"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "11116",
+                        "hosname": "โรงพยาบาลคำชะอี"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "13984",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโนนสว่าง ตำบลคำชะอี"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "คำชะอี",
+                        "hmain": "11116",
+                        "hmainname": "โรงพยาบาลคำชะอี",
+                        "hoscode": "13985",
+                        "hosname": "สถานีอนามัยบ้านห้วยตาเปอะเฉลิมพระเกียรติ"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หว้านใหญ่",
+                        "hmain": "11117",
+                        "hmainname": "โรงพยาบาลหว้านใหญ่",
+                        "hoscode": "05800",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหว้านใหญ่   หว้านใหญ่"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หว้านใหญ่",
+                        "hmain": "11117",
+                        "hmainname": "โรงพยาบาลหว้านใหญ่",
+                        "hoscode": "05801",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านป่งขาม ตำบลป่งขาม"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หว้านใหญ่",
+                        "hmain": "11117",
+                        "hmainname": "โรงพยาบาลหว้านใหญ่",
+                        "hoscode": "05802",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านดอน ตำบลบางทรายน้อย"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หว้านใหญ่",
+                        "hmain": "11117",
+                        "hmainname": "โรงพยาบาลหว้านใหญ่",
+                        "hoscode": "05803",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านบางทราย ตำบลบางทรายน้อย"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หว้านใหญ่",
+                        "hmain": "11117",
+                        "hmainname": "โรงพยาบาลหว้านใหญ่",
+                        "hoscode": "05804",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านชะโนด ตำบลชะโนด"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หว้านใหญ่",
+                        "hmain": "11117",
+                        "hmainname": "โรงพยาบาลหว้านใหญ่",
+                        "hoscode": "05805",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านนิคมเกษตรกรรมทหารผ่านศึก"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หว้านใหญ่",
+                        "hmain": "11117",
+                        "hmainname": "โรงพยาบาลหว้านใหญ่",
+                        "hoscode": "11117",
+                        "hosname": "โรงพยาบาลหว้านใหญ่"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หนองสูง",
+                        "hmain": "11118",
+                        "hmainname": "โรงพยาบาลหนองสูง",
+                        "hoscode": "05806",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านงิ้ว ตำบลโนนยาง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หนองสูง",
+                        "hmain": "11118",
+                        "hmainname": "โรงพยาบาลหนองสูง",
+                        "hoscode": "05807",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านคำพอก  ตำบลโนนยาง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หนองสูง",
+                        "hmain": "11118",
+                        "hmainname": "โรงพยาบาลหนองสูง",
+                        "hoscode": "05808",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านบุ่ง ตำบลภูวง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หนองสูง",
+                        "hmain": "11118",
+                        "hmainname": "โรงพยาบาลหนองสูง",
+                        "hoscode": "05809",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านเป้า ตำบลบ้านเป้า"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หนองสูง",
+                        "hmain": "11118",
+                        "hmainname": "โรงพยาบาลหนองสูง",
+                        "hoscode": "05810",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านโคกกลาง  ตำบลหนองสูงใต้"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หนองสูง",
+                        "hmain": "11118",
+                        "hmainname": "โรงพยาบาลหนองสูง",
+                        "hoscode": "11118",
+                        "hosname": "โรงพยาบาลหนองสูง"
+                    },
+                    {
+                        "provcode": "49",
+                        "changwatname": "มุกดาหาร",
+                        "ampurname": "หนองสูง",
+                        "hmain": "11118",
+                        "hmainname": "โรงพยาบาลหนองสูง",
+                        "hoscode": "15009",
+                        "hosname": "โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านหนองแต้  ตำบลหนองสูง"
+                    }
+                ]
+            }
+        ]
+
+### Create a New Question [POST]
+
+You may create your own question using this action. It takes a JSON
+object containing a question and a collection of answers in the
+form of choices.
+
++ Request (application/json)
+
+        {
+            "question": "Favourite programming language?",
+            "choices": [
+                "Swift",
+                "Python",
+                "Objective-C",
+                "Ruby"
+            ]
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /questions/2
+
+    + Body
+
+            {
+                "question": "Favourite programming language?",
+                "published_at": "2015-08-05T08:40:51.620Z",
+                "choices": [
+                    {
+                        "choice": "Swift",
+                        "votes": 0
+                    }, {
+                        "choice": "Python",
+                        "votes": 0
+                    }, {
+                        "choice": "Objective-C",
+                        "votes": 0
+                    }, {
+                        "choice": "Ruby",
+                        "votes": 0
+                    }
+                ]
+            }
